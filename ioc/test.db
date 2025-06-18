@@ -2,6 +2,8 @@
 record(ao, "test:ao1")
 {
         field(DESC, "Water temperature in the fish tank")
+        field(VAL, 50)
+        field(PINI, "YES")
         field(EGU, "C")
         field(PREC, 3)
         field(LOPR, 10)
@@ -38,6 +40,8 @@ record (stringin, "test:string`")
 }
 
 record(mbbo, "test:enum1"){
+    field(VAL, 1)
+    field(PINI, "YES")
 	field(ZRST, "1x1")
 	field(ZRVL, "1")
 	field(ONST, "2x2")
@@ -48,6 +52,8 @@ record(mbbo, "test:enum1"){
 
 record(bi, "test:bi1")
 {
+    field(VAL, 1)
+    field(PINI, "YES")
     field(ZNAM, "Off from PV")
     field(ONAM, "On")
 }
