@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>310</width>
+  <height>232</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Countdown (s)</text>
+    <x>5</x>
+    <y>4</y>
+    <width>103</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>test:ao1</pv_name>
+    <x>226</x>
+    <y>4</y>
+    <width>80</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64">
+      </color>
+    </background_color>
+    <format>1</format>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Number of shots to fire</text>
+    <x>5</x>
+    <y>112</y>
+    <width>168</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>test:ao1</pv_name>
+    <x>226</x>
+    <y>112</y>
+    <width>80</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>StartButton</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>test:ao1</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Start</text>
+    <x>4</x>
+    <y>196</y>
+    <width>97</width>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="Enabling" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 || pv1 == 1 || pv1 == 2">
+          <value>false</value>
+        </exp>
+        <pv_name>SR-CS-FILL-01:TOPUPSTATE</pv_name>
+        <pv_name>SR-CS-FILL-01:FPGSTATE</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>StopButton</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>test:ao1</pv_name>
+        <value>0</value>
+      </action>
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>test:ao1</pv_name>
+        <value>2</value>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Stop</text>
+    <x>107</x>
+    <y>196</y>
+    <width>97</width>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="Enabling" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 != 1 &amp;&amp; pv0 != 2">
+          <value>false</value>
+        </exp>
+        <pv_name>SR-CS-FILL-01:TOPUPSTATE</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>ResetButton</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>test:ao1</pv_name>
+        <value>0</value>
+      </action>
+      <action type="write_pv">
+        <description>Write PV</description>
+        <pv_name>test:ao1</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Reset</text>
+    <x>209</x>
+    <y>196</y>
+    <width>97</width>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="Enabling" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 != 3">
+          <value>false</value>
+        </exp>
+        <pv_name>SR-CS-FILL-01:TOPUPSTATE</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Topup State</text>
+    <x>5</x>
+    <y>58</y>
+    <width>103</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>test:ao1</pv_name>
+    <x>154</x>
+    <y>58</y>
+    <width>152</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Topup Phase</text>
+    <x>5</x>
+    <y>82</y>
+    <width>103</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>test:ao1</pv_name>
+    <x>154</x>
+    <y>82</y>
+    <width>152</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Gun Bias (V)</text>
+    <x>5</x>
+    <y>136</y>
+    <width>103</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>test:ao1</pv_name>
+    <x>226</x>
+    <y>136</y>
+    <width>80</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>test:ao1</pv_name>
+    <x>226</x>
+    <y>28</y>
+    <width>80</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Period (min)</text>
+    <x>5</x>
+    <y>28</y>
+    <width>106</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>ShowTopupProperties</name>
+    <actions>
+      <action type="open_display">
+        <description>TopUp</description>
+        <file>topup_properties.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Show Properties</text>
+    <x>200</x>
+    <y>168</y>
+    <width>106</width>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar_1</name>
+    <pv_name>test:ao1</pv_name>
+    <x>152</x>
+    <y>4</y>
+    <width>72</width>
+    <height>22</height>
+    <fill_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96">
+      </color>
+    </fill_color>
+    <background_color>
+      <color name="Canvas" red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Active colour" prop_id="fill_color" out_exp="false">
+        <exp bool_exp="pv0 &gt; 1 &amp;&amp; pv0 &lt; 10">
+          <value>
+            <color red="0" green="0" blue="255">
+            </color>
+          </value>
+        </exp>
+        <pv_name>SR-CS-FILL-01:TOPUPPHASE</pv_name>
+      </rule>
+    </rules>
+    <scripts>
+      <script file="scripts/countdown.py">
+        <pv_name>SR-CS-FILL-01:FILLPERIOD</pv_name>
+      </script>
+    </scripts>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+</display>

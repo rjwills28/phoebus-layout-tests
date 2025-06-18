@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Topup Properties</name>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_17</name>
+    <macros>
+      <text>Use Picoharp</text>
+      <option_pv>test:enum1</option_pv>
+    </macros>
+    <file>selection.opi</file>
+    <x>4</x>
+    <y>362</y>
+    <width>254</width>
+    <height>25</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <macros>
+      <text>BR pulsed mag warmup (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>2</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_1</name>
+    <macros>
+      <text>BR ramp mags warmup (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>24</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_2</name>
+    <macros>
+      <text>Septum warmup (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>46</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_3</name>
+    <macros>
+      <text>Topup gun bias (V)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>234</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_4</name>
+    <macros>
+      <text>Kicker ramp (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>90</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_5</name>
+    <macros>
+      <text>Kicker warmup (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>68</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_6</name>
+    <macros>
+      <text>Current low alarm tol (mA) *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>Margin below target current for SIG_ALARM PV to show an alarm</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>284</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_7</name>
+    <macros>
+      <text>Current high alarm tol (mA) *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>Margin above target current for SIG_ALARM PV to show an alarm</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>262</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_8</name>
+    <macros>
+      <text>Test shots/cycle</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>118</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_9</name>
+    <macros>
+      <text>Max shots/cycle *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>However it calculates, Topup will fire no more than this number of shots</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>184</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_11</name>
+    <macros>
+      <text>Calculate shots/cycle *</text>
+      <yesno_pv>test:ao1</yesno_pv>
+      <tooltip>If selected, Topup will calculate how many shots to fire. If not, it will use the number from the 'Topup shots/cycle' box</tooltip>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>140</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_13</name>
+    <macros>
+      <text>Multiple shots/bucket</text>
+      <yesno_pv>test:ao1</yesno_pv>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>206</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_16</name>
+    <macros>
+      <option_pv>test:enum1</option_pv>
+      <text>Period (min)</text>
+    </macros>
+    <file>selection.opi</file>
+    <x>4</x>
+    <y>395</y>
+    <width>254</width>
+    <height>25</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Enable-only-if-not-calculating" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 &lt; 0.5">
+          <value>true</value>
+        </exp>
+      </rule>
+    </rules>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_27</name>
+    <macros>
+      <text>Bucket overflow tol (nC) *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>If any bucket contains 0.2*target plus this value, topup will skip a cycle</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>312</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_10</name>
+    <macros>
+      <text>Top-up shots/cycle *</text>
+      <update_pv>test:ao1</update_pv>
+      <disabling_pv>SR-CS-FILL-01:CALCNUMBUC</disabling_pv>
+      <tooltip>If 'Calculate shots/cycle' is set, this value will be calculated. If not, this many shots will be fired.</tooltip>
+    </macros>
+    <file>enabling_property.opi</file>
+    <x>4</x>
+    <y>162</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_29</name>
+    <macros>
+      <text>Injection-skip margin (mA) *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>Beam current must be at least this much below the topup target (e.g. 302 mA) for a topup to go ahead</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>334</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>* Hover for more information</text>
+    <x>4</x>
+    <y>426</y>
+    <width>251</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text: FG" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Canvas" red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+</display>

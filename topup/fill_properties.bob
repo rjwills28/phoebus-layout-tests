@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Fill Properties</name>
+  <background_color>
+    <color name="CO title" red="169" green="210" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_2</name>
+    <macros>
+      <text>Septum Warmup (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>52</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_5</name>
+    <macros>
+      <text>Kicker Warmup (s)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>74</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_9</name>
+    <macros>
+      <text>Max calc shots/cycle</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>146</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_11</name>
+    <macros>
+      <text>Calculate shots/cycle</text>
+      <yesno_pv>test:ao1</yesno_pv>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>102</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_13</name>
+    <macros>
+      <text>Multiple shots/bucket</text>
+      <yesno_pv>test:ao1</yesno_pv>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>168</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_20</name>
+    <macros>
+      <text>Gun Bias 1: Multibunch (V)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>268</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_22</name>
+    <macros>
+      <text>Select buckets by ratio</text>
+      <yesno_pv>test:ao1</yesno_pv>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>196</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_28</name>
+    <macros>
+      <text>Multibunch fill</text>
+      <yesno_pv>test:ao1</yesno_pv>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>2</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_29</name>
+    <macros>
+      <text>Fill fraction in multibunch</text>
+      <update_pv>test:ao1</update_pv>
+      <disabling_pv>SR-CS-FILL-01:FILLMODE</disabling_pv>
+    </macros>
+    <file>disabling_property.opi</file>
+    <x>4</x>
+    <y>24</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_10</name>
+    <macros>
+      <text>Fill shots/cycle</text>
+      <update_pv>test:ao1</update_pv>
+      <disabling_pv>SR-CS-FILL-01:FPGCALCNB</disabling_pv>
+    </macros>
+    <file>enabling_property.opi</file>
+    <x>4</x>
+    <y>124</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_32</name>
+    <macros>
+      <text>Gun Bias 1: Single bunch</text>
+      <text2>(range, V)</text2>
+      <min_pv>test:ao1</min_pv>
+      <max_pv>test:ao1</max_pv>
+    </macros>
+    <file>maxmin_property.opi</file>
+    <x>4</x>
+    <y>224</y>
+    <width>252</width>
+    <height>42</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>* Hover for more information</text>
+    <x>6</x>
+    <y>462</y>
+    <width>251</width>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Text: FG" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Canvas" red="200" green="200" blue="200">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="Black" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_21</name>
+    <macros>
+      <text>MB Width Adjust (bkts)</text>
+      <update_pv>test:ao1</update_pv>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>296</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_24</name>
+    <macros>
+      <text>Generate eLog entry</text>
+      <yesno_pv>test:ao1</yesno_pv>
+    </macros>
+    <file>option.opi</file>
+    <x>4</x>
+    <y>324</y>
+    <width>250</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_17</name>
+    <macros>
+      <text>Use Picoharp</text>
+      <option_pv>test:enum1</option_pv>
+    </macros>
+    <file>selection.opi</file>
+    <x>4</x>
+    <y>430</y>
+    <width>254</width>
+    <height>25</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_27</name>
+    <macros>
+      <text>Bucket Overflow Tol (nC) *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>If any bucket contains 0.2*target plus this value, the fill will abort</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>380</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_31</name>
+    <macros>
+      <text>Injection-skip margin (mA) *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>Beam current must be at least this much below the fill target (e.g. 300 mA) for a fill to go ahead</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>402</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container_33</name>
+    <macros>
+      <text>LA BS-SR efficiency estimate *</text>
+      <update_pv>test:ao1</update_pv>
+      <tooltip>Estimated BS-SR efficiency in Low Alpha. This is used to calculate injection for the first fill</tooltip>
+    </macros>
+    <file>property.opi</file>
+    <x>4</x>
+    <y>352</y>
+    <width>252</width>
+    <height>20</height>
+    <resize>2</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

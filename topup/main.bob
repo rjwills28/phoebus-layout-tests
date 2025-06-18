@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Main</name>
+  <width>1050</width>
+  <height>650</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="databrowser" version="2.0.0">
+    <name>Data Browser</name>
+    <file>plots/fillcurrent.plt</file>
+    <x>10</x>
+    <y>284</y>
+    <width>668</width>
+    <height>354</height>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Grouping Container_1</name>
+    <x>699</x>
+    <y>6</y>
+    <width>328</width>
+    <height>640</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="group" version="3.0.0">
+      <name>Grouping Container</name>
+      <y>580</y>
+      <width>325</width>
+      <height>57</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>summaryContainer</name>
+    <file>status.opi</file>
+    <x>700</x>
+    <y>471</y>
+    <width>323</width>
+    <height>67</height>
+    <resize>1</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="command">
+        <description>View Logs</description>
+        <command>gedit + /home/ops/topup/messages/topupMessages.txt</command>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Messages</text>
+    <x>921</x>
+    <y>617</y>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button_1</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <description>Multibunch</description>
+        <file>stats_mb.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Single bunch</description>
+        <file>stats_sb.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Topup (Times)</description>
+        <file>stats_topup_times.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Topup (Fill)</description>
+        <file>stats_topup_fs.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Topup (Test)</description>
+        <file>stats_topup_ts.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Statistics</text>
+    <x>810</x>
+    <y>617</y>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <description>View/Update bias curve</description>
+        <file>gun_bias.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Gun Bias</text>
+    <x>921</x>
+    <y>588</y>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <description>Load fill pattern</description>
+        <file>loader.opi</file>
+        <target>window</target>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Fill Pattern</text>
+    <x>699</x>
+    <y>588</y>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>interlocks.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Interlocks</text>
+    <x>810</x>
+    <y>588</y>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button_1</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <description>Topup Viewer</description>
+        <file>ops_viewer.opi</file>
+        <target>window</target>
+      </action>
+      <action type="open_display">
+        <description>Bunch Info (Fill)</description>
+        <file>bunch_info_filll.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Bunch Info (TopUp)</description>
+        <file>bunch_info_topup.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Bunch Lifetime</description>
+        <file>bunch_lifetime.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Shot by Shot</description>
+        <file>shot_by_shot.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>BPM Position</description>
+        <file>bpm_position.opi</file>
+        <target>tab</target>
+      </action>
+      <action type="open_display">
+        <description>Transfer Line Trajectory</description>
+        <file>ltb_trajectory.opi</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>Plots</text>
+    <x>699</x>
+    <y>617</y>
+    <height>21</height>
+    <font>
+      <font name="Label Small" family="Liberation Sans" style="REGULAR" size="12.871287128712872">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>messageContainer</name>
+    <file>messages.opi</file>
+    <x>699</x>
+    <y>538</y>
+    <width>325</width>
+    <height>48</height>
+    <resize>1</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabbed Container</name>
+    <tabs>
+      <tab>
+        <name>Topup</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container</name>
+            <file>topup.opi</file>
+            <x>4</x>
+            <y>6</y>
+            <width>314</width>
+            <height>231</height>
+            <resize>4</resize>
+            <transparent>true</transparent>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name> Fill </name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container</name>
+            <file>fill.opi</file>
+            <x>4</x>
+            <y>6</y>
+            <width>314</width>
+            <height>231</height>
+            <resize>4</resize>
+            <transparent>true</transparent>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Advanced</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Linking Container</name>
+            <file>advanced.opi</file>
+            <x>7</x>
+            <y>6</y>
+            <width>314</width>
+            <height>231</height>
+            <resize>4</resize>
+            <transparent>true</transparent>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="Black" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>699</x>
+    <y>47</y>
+    <width>325</width>
+    <height>270</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <active_tab>-1</active_tab>
+    <tab_height>10</tab_height>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>runningContainer</name>
+    <file>status_running.opi</file>
+    <x>700</x>
+    <y>6</y>
+    <width>323</width>
+    <height>34</height>
+    <resize>1</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>summaryContainer</name>
+    <file>status_machine.opi</file>
+    <x>700</x>
+    <y>325</y>
+    <width>323</width>
+    <height>137</height>
+    <resize>4</resize>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="open_webpage">
+        <description>Launch Help</description>
+        <url>http://confluence.diamond.ac.uk/display/CNTRLS/TopUp+Help</url>
+      </action>
+    </actions>
+    <pv_name>test:ao1</pv_name>
+    <text>?</text>
+    <x>994</x>
+    <y>47</y>
+    <width>24</width>
+    <height>24</height>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205">
+      </color>
+    </background_color>
+    <tooltip>Launch Help in Browser</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

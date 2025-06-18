@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <actions hook="false" hook_all="false" />
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <background_color>
+    <color red="240" green="240" blue="240" />
+  </background_color>
+  <boy_version>5.1.0.201703080526</boy_version>
+  <foreground_color>
+    <color red="192" green="192" blue="192" />
+  </foreground_color>
+  <grid_space>6</grid_space>
+  <height>232</height>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <name></name>
+  <rules />
+  <scripts />
+  <show_close_button>true</show_close_button>
+  <show_edit_range>true</show_edit_range>
+  <show_grid>true</show_grid>
+  <show_ruler>true</show_ruler>
+  <snap_to_geometry>true</snap_to_geometry>
+  <widget_type>Display</widget_type>
+  <width>310</width>
+  <wuid>-62f6d489:14ceb96aea1:-7f25</wuid>
+  <x>-1</x>
+  <y>-1</y>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Countdown (s)</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>103</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-62f6d489:14ceb96aea1:-7ea4</wuid>
+    <x>5</x>
+    <y>4</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </foreground_color>
+    <format_type>1</format_type>
+    <height>20</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update</name>
+    <precision>0</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-62f6d489:14ceb96aea1:-7ea3</wuid>
+    <x>226</x>
+    <y>4</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Number of shots to fire</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>168</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-62f6d489:14ceb96aea1:-7ea2</wuid>
+    <x>5</x>
+    <y>112</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>20</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_1</name>
+    <precision>0</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>true</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-62f6d489:14ceb96aea1:-7ea1</wuid>
+    <x>226</x>
+    <y>112</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>test:ao1</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="15" style="0" pixels="true">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196" />
+    </foreground_color>
+    <height>30</height>
+    <image></image>
+    <name>StartButton</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Enabling" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 || pv1 == 1 || pv1 == 2">
+          <value>false</value>
+        </exp>
+        <pv trig="true">SR-CS-FILL-01:TOPUPSTATE</pv>
+        <pv trig="true">SR-CS-FILL-01:FPGSTATE</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Start</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>97</width>
+    <wuid>-62f6d489:14ceb96aea1:-7de3</wuid>
+    <x>4</x>
+    <y>196</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>test:ao1</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>test:ao1</pv_name>
+        <value>2</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="15" style="0" pixels="true">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196" />
+    </foreground_color>
+    <height>30</height>
+    <image></image>
+    <name>StopButton</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Enabling" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 != 1 &amp;&amp; pv0 != 2">
+          <value>false</value>
+        </exp>
+        <pv trig="true">SR-CS-FILL-01:TOPUPSTATE</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Stop</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>97</width>
+    <wuid>-62f6d489:14ceb96aea1:-7dcb</wuid>
+    <x>107</x>
+    <y>196</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="true">
+      <action type="WRITE_PV">
+        <pv_name>test:ao1</pv_name>
+        <value>0</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+      <action type="WRITE_PV">
+        <pv_name>test:ao1</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="15" style="0" pixels="true">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196" />
+    </foreground_color>
+    <height>30</height>
+    <image></image>
+    <name>ResetButton</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Enabling" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 != 3">
+          <value>false</value>
+        </exp>
+        <pv trig="true">SR-CS-FILL-01:TOPUPSTATE</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Reset</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>97</width>
+    <wuid>-62f6d489:14ceb96aea1:-7dc6</wuid>
+    <x>209</x>
+    <y>196</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_2</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Topup State</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>103</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-1d5403d2:14cebb22fa1:-7fb2</wuid>
+    <x>5</x>
+    <y>58</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>20</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_2</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>true</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>152</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-1d5403d2:14cebb22fa1:-7fb1</wuid>
+    <x>154</x>
+    <y>58</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_3</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Topup Phase</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>103</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-3e868e7b:14d230f381f:-7e9e</wuid>
+    <x>5</x>
+    <y>82</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>20</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_3</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>true</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>152</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-3e868e7b:14d230f381f:-7e9d</wuid>
+    <x>154</x>
+    <y>82</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_4</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Gun Bias (V)</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>103</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-3e868e7b:14d230f381f:-7e74</wuid>
+    <x>5</x>
+    <y>136</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>20</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_4</name>
+    <precision>0</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-3e868e7b:14d230f381f:-7e73</wuid>
+    <x>226</x>
+    <y>136</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Monitor: BG" red="64" green="64" blue="64" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </foreground_color>
+    <format_type>0</format_type>
+    <height>20</height>
+    <horizontal_alignment>2</horizontal_alignment>
+    <name>Text Update_5</name>
+    <precision>0</precision>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>80</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-24f33a7c:14d4803c2f3:-7dab</wuid>
+    <x>226</x>
+    <y>28</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_5</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Period (min)</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>106</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-24f33a7c:14d4803c2f3:-7d98</wuid>
+    <x>5</x>
+    <y>28</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>topup_properties.opi</path>
+        <macros>
+          <include_parent_macros>false</include_parent_macros>
+        </macros>
+        <mode>3</mode>
+        <description>TopUp</description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Button: BG" red="205" green="205" blue="205" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="Black" red="0" green="0" blue="0" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>0</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Related Display: FG" red="128" green="64" blue="0" />
+    </foreground_color>
+    <height>21</height>
+    <image></image>
+    <name>ShowTopupProperties</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Show Properties</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>106</width>
+    <wuid>-153b6aaf:159f4dbe654:-7ad8</wuid>
+    <x>200</x>
+    <y>168</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.progressbar" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <color_fillbackground>
+      <color name="Canvas" red="200" green="200" blue="200" />
+    </color_fillbackground>
+    <color_hi>
+      <color red="255" green="128" blue="0" />
+    </color_hi>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <color_lo>
+      <color red="255" green="128" blue="0" />
+    </color_lo>
+    <color_lolo>
+      <color red="255" green="0" blue="0" />
+    </color_lolo>
+    <effect_3d>false</effect_3d>
+    <enabled>true</enabled>
+    <fill_color>
+      <color name="Monitor: FG" red="96" green="255" blue="96" />
+    </fill_color>
+    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>22</height>
+    <horizontal>true</horizontal>
+    <indicator_mode>false</indicator_mode>
+    <level_hi>80.0</level_hi>
+    <level_hihi>90.0</level_hihi>
+    <level_lo>20.0</level_lo>
+    <level_lolo>10.0</level_lolo>
+    <limits_from_pv>false</limits_from_pv>
+    <log_scale>false</log_scale>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <maximum>0.0</maximum>
+    <minimum>100.0</minimum>
+    <name>Progress Bar_1</name>
+    <origin>0.0</origin>
+    <origin_ignored>false</origin_ignored>
+    <pv_name>test:ao1</pv_name>
+    <pv_value />
+    <rules>
+      <rule name="Active colour" prop_id="fill_color" out_exp="false">
+        <exp bool_exp="pv0 &gt; 1 &amp;&amp; pv0 &lt; 10">
+          <value>
+            <color red="0" green="0" blue="255" />
+          </value>
+        </exp>
+        <pv trig="true">SR-CS-FILL-01:TOPUPPHASE</pv>
+      </rule>
+    </rules>
+    <scale_font>
+      <opifont.name fontName="Liberation Sans" height="15" style="0" pixels="true">Default</opifont.name>
+    </scale_font>
+    <scale_format></scale_format>
+    <scale_options>
+      <width_scalable>false</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts>
+      <path pathString="scripts/countdown.py" checkConnect="true" sfe="false" seoe="false">
+        <pv trig="true">SR-CS-FILL-01:FILLPERIOD</pv>
+      </path>
+    </scripts>
+    <show_hi>false</show_hi>
+    <show_hihi>false</show_hihi>
+    <show_label>false</show_label>
+    <show_lo>false</show_lo>
+    <show_lolo>false</show_lolo>
+    <show_markers>false</show_markers>
+    <show_minor_ticks>false</show_minor_ticks>
+    <show_scale>false</show_scale>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent_background>false</transparent_background>
+    <value_label_format></value_label_format>
+    <visible>true</visible>
+    <widget_type>Progress Bar</widget_type>
+    <width>72</width>
+    <wuid>549e3611:15a6a91c048:-7e9e</wuid>
+    <x>152</x>
+    <y>4</y>
+  </widget>
+</display>

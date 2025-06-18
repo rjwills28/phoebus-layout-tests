@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Standalone</name>
+  <width>400</width>
+  <height>400</height>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Standalone window 1</text>
+    <x>50</x>
+    <y>20</y>
+    <width>320</width>
+    <height>31</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="thermometer" version="2.0.0">
+    <name>Thermometer</name>
+    <pv_name>test:ao1</pv_name>
+    <x>160</x>
+    <y>110</y>
+  </widget>
+</display>

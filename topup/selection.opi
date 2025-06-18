@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <actions hook="false" hook_all="false" />
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <background_color>
+    <color red="240" green="240" blue="240" />
+  </background_color>
+  <boy_version>5.1.0.201703150447</boy_version>
+  <foreground_color>
+    <color red="192" green="192" blue="192" />
+  </foreground_color>
+  <grid_space>6</grid_space>
+  <height>27</height>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+  </macros>
+  <name></name>
+  <rules />
+  <scripts />
+  <show_close_button>true</show_close_button>
+  <show_edit_range>true</show_edit_range>
+  <show_grid>true</show_grid>
+  <show_ruler>true</show_ruler>
+  <snap_to_geometry>true</snap_to_geometry>
+  <widget_type>Display</widget_type>
+  <width>250</width>
+  <wuid>6630415f:14d28bfefe0:-7b49</wuid>
+  <x>-1</x>
+  <y>-1</y>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>$(text)</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>187</width>
+    <wrap_words>false</wrap_words>
+    <wuid>6630415f:14d28bfefe0:-7b0c</wuid>
+    <x>0</x>
+    <y>4</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="Canvas" red="200" green="200" blue="200" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="Black" red="0" green="0" blue="0" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>0</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Liberation Sans" height="13" style="0" pixels="true">Label Small</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Controller: FG" red="0" green="0" blue="196" />
+    </foreground_color>
+    <height>25</height>
+    <horizontal>true</horizontal>
+    <items_from_pv>true</items_from_pv>
+    <name>Choice Button</name>
+    <pv_name>$(option_pv)</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>false</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <selected_color>
+      <color name="Button: On" red="190" green="190" blue="190" />
+    </selected_color>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Choice Button</widget_type>
+    <width>170</width>
+    <wuid>-6a474c8d:15a7f373d29:-6c65</wuid>
+    <x>84</x>
+    <y>2</y>
+  </widget>
+</display>

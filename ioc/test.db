@@ -1,0 +1,53 @@
+
+record(ao, "test:ao1")
+{
+        field(DESC, "Water temperature in the fish tank")
+        field(EGU, "C")
+        field(PREC, 3)
+        field(LOPR, 10)
+        field(HOPR, 90)
+        field(DRVH, 120)
+        field(DRVL, -20)
+        field(HSV, MINOR)
+        field(LSV, MINOR)
+        field(LLSV, MAJOR)
+        field(HHSV, MAJOR)
+        field(HIGH, 90)
+        field(HIHI, 100)
+        field(LOW, 10)
+        field(LOLO, 0)
+}
+
+record (waveform, "test:waveform1")
+{
+    field (NELM, "100")
+    field (FTVL, "CHAR")
+    field (PINI, "YES")
+}
+
+record(waveform, "test:waveform2")
+{
+    field(DESC, "Performance test record")
+    field(NELM,"10")
+    field(FTVL, "SHORT")
+}
+
+
+record (stringin, "test:string`")
+{
+}
+
+record(mbbo, "test:enum1"){
+	field(ZRST, "1x1")
+	field(ZRVL, "1")
+	field(ONST, "2x2")
+	field(ONVL, "2")
+	field(THST, "4x4")
+	field(THVL, "4")
+}
+
+record(bi, "test:bi1")
+{
+    field(ZNAM, "Off from PV")
+    field(ONAM, "On")
+}
