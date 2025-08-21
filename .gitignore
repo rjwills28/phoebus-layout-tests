@@ -1,2 +1,5 @@
 scripts/__pycache__
-mementos/topup.memento
+mementos/*
+scripts/*~
+dummy/*~
+diag/*~
