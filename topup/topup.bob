@@ -414,6 +414,7 @@
         <description>TopUp</description>
         <file>topup_properties.opi</file>
         <target>tab</target>
+        <name>DetailsPane</name>
       </action>
     </actions>
     <pv_name>test:ao1</pv_name>
